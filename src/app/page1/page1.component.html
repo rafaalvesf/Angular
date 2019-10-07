@@ -1,0 +1,39 @@
+<style>
+
+.mainp1{
+    text-align: center;
+}
+.imputNomeFlor{
+    font-weight: bold;
+}
+
+.imggenerate{
+    padding: 30px;
+    width: 100px;
+    height: 100px;
+}
+.nameobject{
+font-weight: bold;
+color: blueviolet;
+}
+
+</style>
+
+<div class="mainp1">
+<h3 >Cadastre sua flor...</h3>
+<br>
+    <label>
+        Nome
+        <br><input name="teste" type="text" [formControl]="name" required>
+    </label><br><br>
+    <button (click)="updateName()">Registrar Flor</button><br>
+    
+    <img class="imggenerate" src="{{image.value}}" alt="">
+    <p class="nameobject">
+        Nome da Flor: {{ name.value }}
+    </p>  
+
+    <p>
+  
+</p>
+</div>
