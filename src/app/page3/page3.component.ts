@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Cliente } from '../cliente';
 
 @Component({
   selector: 'app-page3',
@@ -11,5 +12,12 @@ export class Page3Component implements OnInit {
 
   ngOnInit() {
   }
+
+  cliente: Cliente = new Cliente();
+
+salvar(){
+  console.log(this.cliente);
+  
+}
 
 }
